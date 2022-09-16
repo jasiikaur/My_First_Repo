@@ -1,0 +1,275 @@
+/* STARTER CODE -- DO NOT DELETE */
+/*	============================================== */
+
+/* colors*/
+
+/*
+#821D30 rosey red
+#211522 black
+#055C9D blue
+#F2E34C yellow
+*/
+
+
+/*fonts*/
+/* 
+font-family: 'Butcherman', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Source Code Pro', monospace;
+*/
+
+/*	============================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+header { 
+	position: sticky;
+	line-height: 1.5;
+}
+
+h1	{
+	text-align: center;
+	font-family: 'Butcherman', cursive;
+	font-size: 4rem;
+	color:#821D30;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Source Code Pro', monospace;
+	letter-spacing: 0.5rem;
+	font-size: 2.5rem;
+	color: #ddd;
+	text-transform: uppercase;
+	text-shadow: 1px 1px #000;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 1.5rem;
+	letter-spacing: 0.4rem;
+	text-align: center;
+}
+
+p.lead-in {
+	font-size: 1.4rem;
+}
+
+p {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+/*	============================================== */
+
+body{
+	font-family: 'Source Code Pro', monospace;
+	background-image: url('../images/438486.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.container {
+	width: 1000px;
+	max-width: 100%;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+
+header {
+	background: #821D30;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+nav ul { 
+	display: flex;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: space-around;
+
+	list-style: none;
+	margin: 0;
+}
+
+
+nav ul li {
+	border-left: 1px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	color: floralwhite;
+	font-family: 'Roboto Mono', monospace;
+	text-transform: uppercase;
+	
+}
+
+nav ul li a:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+/*=============================================*/
+
+.page-section--history h2 {
+	
+	text-align: center;
+	color: #ddd;
+}
+
+.page-section--history p {
+	text-align: center;
+	color: #ddd;
+}
+
+.avatar {
+	border-radius: 25%;
+	border: 5px solid #821D30;
+
+}
+/*=============================================*/
+
+.stat-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stat-item {
+	position: relative;
+	background: #055C9D;
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 100px ;
+	width: 15rem;
+	height: 15rem;
+	color: #fff;
+	transition: border-radius 300ms ease, transform 300ms ease, background-color 300ms ease;
+}
+
+.stat-item p {
+	opacity: 0;
+}
+.stat-item:hover {
+	z-index: 1;
+	border-radius: 100px;
+	transform: scale(1.3);
+	background-color: #211522;
+}
+
+
+
+.stat-item:hover p {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/*=============================================*/
+.page-section--powers {
+	background-color: floralwhite;
+}
+
+.page-section--powers h2 {
+	color: #055C9D;
+}
+.page-section--powers h3,
+.page-section--powers p {
+	color :#211522
+}
+
+.page-section--powers h3 {
+	display: flex;
+	border: 4px solid #055C9D;
+	padding: .5rem 2rem ;
+	border-radius: 2rem;
+	justify-content: center;
+}
+
+.power-item {
+	padding: 1rem;
+	background-color: rgba(255,255,255,.2);
+	margin-bottom: 1rem;
+}
+/*	---------------------------------------------- */
+
+
+
+
+
+
+figure {
+	background :floralwhite ;
+	padding: 2rem;
+	border-radius: 50%;
+	border: 5px solid #821D30; 
+}
+
+blockquote p {
+	text-transform: uppercase;
+}
+
+
+
+  
+
+
+.swatch-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -.5rem;
+	width: 100%;
+}
+
+.swatch-item {
+	width: calc(20% - 1rem);
+	padding: .5rem;
+	margin: .5rem;
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.swatch-sample {
+	height: 100px;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+.swatch-hex {
+	padding: .5rem 0 0;
+	text-align: center;
+}
+
+.swatch-sample--one {
+	background-color: #821D30;
+}
+.swatch-sample--two {
+	background-color: #211522;
+}
+.swatch-sample--three {
+	background-color: #055C9D;
+}
+.swatch-sample--four {
+	background-color: #F2E34C;
+}
